@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["keithbro256@gmail.com"]
   spec.description   = %q{The Form Robot gem accepts a list of instructions to perform against a collection of URLs and HTML forms.}
   spec.summary       = %q{The Form Robot gem accepts a list of instructions to perform against a collection of URLs and HTML forms.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/keithbro/form_robot"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
