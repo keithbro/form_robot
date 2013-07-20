@@ -3,6 +3,7 @@ class Robot
 
     def initialize
         @mech = Mechanize.new
+        @mech.user_agent_alias = 'Mac Safari'
         @was_succesful = false
     end
 
