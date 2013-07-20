@@ -18,7 +18,7 @@ class Robot
     end
 
     def last_response
-        @mech.page.header.to_s + @mech.page.body
+        @mech.page.header.to_s + @mech.page.parser.to_s
     end
 
     private
@@ -31,6 +31,7 @@ class Robot
             form_with_params.set_fields( enter_params )
             form_with_params.submit
 
-            look_for_text ? @mech.page.body.match(look_for_text) : true
+            @mech.page.encoding = 'utf-8'
+            look_for_text ? @mech.page.parser.to_s.match(look_for_text) : true
         end
 end
