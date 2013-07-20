@@ -5,8 +5,8 @@ describe Robot do
 
     it 'must give a UTF-8 response' do
         instructions = {
-            go_to_url: 'http://www.google.com',
-            enter_params: {
+            'go_to_url' => 'http://www.google.com',
+            'enter_params' => {
                 'q' => 'broughton',
             },
         };
